@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piriquito Rest & Pizzaria - Cardápio Completo Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero">
+        <div class="logo-frame">
+            <img src="./img/logo.png" alt="LOGO AQUI" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span style="display:none;">LOGO AQUI</span>
+        </div>
+        <h1>Piriquito</h1>
+        <p>REST & PIZZARIA</p>
+        <p style="margin-top: -15px; opacity: 0.7; font-size: 0.8rem; font-style: italic;">Há mais de 40 anos servindo qualidade</p>
+        <div class="btn-container">
+            <a href="#pizzas" class="btn-main btn-yellow"><i class="fas fa-utensils"></i> Ver Cardápio</a>
+            <a href="#" class="btn-main btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="#" class="btn-main btn-location"><i class="fas fa-map-marker-alt"></i> Localização</a>
+        </div>
+    </section>
+
+    <nav class="nav-categories">
+        <div class="nav-item active" onclick="filterCategory('pizzas', this)">🍕 Pizzas</div>
+        <div class="nav-item" onclick="filterCategory('lanches', this)">🍔 Lanches</div>
+        <div class="nav-item" onclick="filterCategory('pratos', this)">🍽️ Pratos</div>
+        <div class="nav-item" onclick="filterCategory('bebidas', this)">🍹 Bebidas</div>
+    </nav>
+
+    <div class="promo-area">
+        <span class="promo-badge">🔥 MAIS PEDIDO</span>
+        <h3>PROMOÇÃO DO DIA</h3>
+        <p>Prato Feito a partir de <strong>R$ 15,00</strong></p>
+    </div>
+
+    <section class="category-section" id="pizzas">
+        <h2 class="category-title">🍕 Pizzas</h2>
+        
+        <div class="product-card">
+            <span class="badge-premium badge-hot">🔥 MAIS PEDIDO</span>
+            <div class="product-img-placeholder">
+                <img src="./img/pizzacalabresa.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Pizza Calabresa</h3>
+                <p class="product-desc">Calabresa fatiada, cebola, molho de tomate e queijo mussarela.</p>
+                <span class="product-price">R$ 39,90</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/pizzamargharita.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Pizza Marguerita</h3>
+                <p class="product-desc">Molho de tomate, mussarela, tomate fresco e manjericão.</p>
+                <span class="product-price">R$ 42,90</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <span class="badge-premium badge-fav">⭐ FAVORITO</span>
+            <div class="product-img-placeholder">
+                <img src="./img/pizzacatupry.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Pizza Frango com Catupiry</h3>
+                <p class="product-desc">Frango desfiado temperado com catupiry cremoso.</p>
+                <span class="product-price">R$ 44,90</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/pizzaportuguesa.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Pizza Portuguesa</h3>
+                <p class="product-desc">Presunto, ovos, cebola, ervilha, azeitona e mussarela.</p>
+                <span class="product-price">R$ 45,90</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/pizzaquatroqueijo.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Pizza Quatro Queijos</h3>
+                <p class="product-desc">Mussarela, provolone, parmesão e catupiry.</p>
+                <span class="product-price">R$ 46,90</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-section" id="lanches">
+        <h2 class="category-title">🍔 Lanches</h2>
+        
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/X Burger.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">X-Burguer</h3>
+                <p class="product-desc">Pão, carne, queijo, alface e tomate.</p>
+                <span class="product-price">R$ 15,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/Xsalada.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">X-Salada</h3>
+                <p class="product-desc">Carne, queijo, alface, tomate e maionese.</p>
+                <span class="product-price">R$ 17,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <span class="badge-premium badge-fav">⭐ FAVORITO</span>
+            <div class="product-img-placeholder">
+                <img src="./img/Xbacon.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">X-Bacon</h3>
+                <p class="product-desc">Carne, queijo, bacon crocante e molho especial.</p>
+                <span class="product-price">R$ 20,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <span class="badge-premium badge-hot">🔥 MAIS PEDIDO</span>
+            <div class="product-img-placeholder">
+                <img src="./img/Xtudo.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">X-Tudo</h3>
+                <p class="product-desc">Hambúrguer completo com bacon, ovo, queijo, presunto e salada.</p>
+                <span class="product-price">R$ 25,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-section" id="pratos">
+        <h2 class="category-title">🍽️ Pratos / Buffet</h2>
+        
+        <div class="product-card">
+            <span class="badge-premium badge-promo">💰 PROMOÇÃO</span>
+            <div class="product-img-placeholder">
+                <img src="./img/pratoexecutivo.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Prato Executivo</h3>
+                <p class="product-desc">Arroz, feijão, carne, salada e acompanhamento do dia.</p>
+                <span class="product-price">R$ 15,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/marmitamedia.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Marmita Média</h3>
+                <p class="product-desc">Arroz, feijão, frango ou carne + salada fresca.</p>
+                <span class="product-price">R$ 18,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/marmitagrande.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Marmita Grande</h3>
+                <p class="product-desc">Arroz, feijão, carne, salada variada e extra do dia.</p>
+                <span class="product-price">R$ 22,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-section" id="bebidas">
+        <h2 class="category-title">🥤 Bebidas & Drinks</h2>
+        
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/refrigerantelata.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Refrigerante Lata</h3>
+                <p class="product-desc">Coca-Cola, Guaraná ou Fanta (350ml).</p>
+                <span class="product-price">R$ 6,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/refrigerante2L.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Refrigerante 2L</h3>
+                <p class="product-desc">Diversos sabores disponíveis.</p>
+                <span class="product-price">R$ 12,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/suconatural.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Suco Natural</h3>
+                <p class="product-desc">Laranja, maracujá ou acerola (Feito na hora).</p>
+                <span class="product-price">R$ 8,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img-placeholder">
+                <img src="./img/aguamineral.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Água Mineral</h3>
+                <p class="product-desc">Com ou sem gás (500ml).</p>
+                <span class="product-price">R$ 4,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <span class="badge-premium badge-fav">⭐ FAVORITO</span>
+            <div class="product-img-placeholder">
+                <img src="./img/drinks.jpg" alt="Imagem do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;">Imagem do produto</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Drinks Simples</h3>
+                <p class="product-desc">Caipirinha, caipivodka ou batidas de frutas.</p>
+                <span class="product-price">R$ 12,00</span>
+                <button class="btn-order"><i class="fab fa-whatsapp"></i> Pedir agora</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="highlight">© Piriquito Rest & Pizzaria</p>
+        <p>Há mais de 40 anos servindo qualidade</p>
+    </footer>
+
+    <a href="#" class="whatsapp-fixed"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
